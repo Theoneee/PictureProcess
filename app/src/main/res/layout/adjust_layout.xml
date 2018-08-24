@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/adjust_layout"
+    android:layout_width="match_parent"
+    android:visibility="gone"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="15dp">
+
+    <com.xw.repo.BubbleSeekBar
+        android:id="@+id/mSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:bsb_progress="50"
+        app:bsb_max="100"
+        app:bsb_min="0"
+        app:bsb_second_track_color="@color/colorAccent"
+        app:bsb_thumb_radius="7dp"
+        app:bsb_track_color="@color/seekBarColor" />
+
+    <RadioGroup
+        android:id="@+id/adjust_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+       <RadioButton
+           android:id="@+id/adjust_1"
+           android:text="亮度"
+           android:drawableTop="@drawable/adjust_light_selector"
+           android:checked="true"
+           style="@style/Adjust_RadioButton_Style" />
+        <RadioButton
+            android:id="@+id/adjust_2"
+            android:text="对比度"
+            android:drawableTop="@drawable/adjust_contrast_selector"
+            style="@style/Adjust_RadioButton_Style" />
+        <RadioButton
+            android:id="@+id/adjust_3"
+            android:text="饱和度"
+            android:drawableTop="@drawable/adjust_saturation_selector"
+            style="@style/Adjust_RadioButton_Style" />
+        <RadioButton
+            android:id="@+id/adjust_4"
+            android:text="模糊"
+            android:drawableTop="@drawable/adjust_fuzzy_selector"
+            style="@style/Adjust_RadioButton_Style" />
+        <RadioButton
+            android:id="@+id/adjust_5"
+            android:text="暗角"
+            android:drawableTop="@drawable/adjust_light_selector"
+            style="@style/Adjust_RadioButton_Style" />
+
+    </RadioGroup>
+
+    <include layout="@layout/divide_layout" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/adjust_cancel"
+            style="@style/wrap_wrap"
+            android:padding="10dp"
+            android:src="@drawable/close" />
+
+        <TextView
+            style="@style/wrap_wrap"
+            android:layout_centerInParent="true"
+            tools:text="调整" />
+
+        <ImageView
+            android:id="@+id/adjust_confirm"
+            style="@style/wrap_wrap"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:src="@drawable/confirm" />
+
+    </RelativeLayout>
+</LinearLayout>

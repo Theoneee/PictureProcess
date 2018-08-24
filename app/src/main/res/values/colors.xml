@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="textColor">#555</color>
+    <color name="textSelectColor">#d81e06</color>
+    <color name="divideColor">#eee</color>
+    <color name="seekBarColor">#ccc</color>
+    <color name="bgColor">#ddd</color>
+
+</resources>

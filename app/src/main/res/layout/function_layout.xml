@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="7dp"
+    android:id="@+id/function_layout">
+
+        <TextView
+            android:id="@+id/tv_filter"
+            android:text="滤镜"
+            android:drawableTop="@drawable/pic1"
+            style="@style/Factory_Item_Style" />
+        <TextView
+            android:id="@+id/tv_rotate"
+            android:text="剪裁"
+            android:drawableTop="@drawable/pic2"
+            style="@style/Factory_Item_Style" />
+        <TextView
+            android:id="@+id/tv_adjust"
+            android:text="调整"
+            android:drawableTop="@drawable/pic3"
+            style="@style/Factory_Item_Style" />
+        <TextView
+            android:id="@+id/tv_text"
+            android:text="文字"
+            android:drawableTop="@drawable/pic4"
+            style="@style/Factory_Item_Style" />
+
+</LinearLayout>

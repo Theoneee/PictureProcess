@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/filter_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:orientation="vertical">
+
+    <include layout="@layout/divide_layout" />
+
+    <!--滤镜这里也可以加入SeekBar进行滤镜的调整-->
+    <!--<com.xw.repo.BubbleSeekBar-->
+    <!--android:id="@+id/mSeekBar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_marginLeft="30dp"-->
+    <!--android:visibility="invisible"-->
+    <!--android:layout_marginRight="30dp"-->
+    <!--app:bsb_min="0"-->
+    <!--app:bsb_max="100"-->
+    <!--app:bsb_thumb_radius="7dp"-->
+    <!--app:bsb_second_track_color="@color/colorAccent"-->
+    <!--app:bsb_track_color="@color/seekBarColor"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:layout_height="16dp" />-->
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_normal"
+                style="@style/Filter_Image_Style" />
+
+            <ImageView
+                android:id="@+id/iv_normal2"
+                style="@style/Filter_Image_Style" />
+
+            <ImageView
+                android:id="@+id/iv_normal3"
+                style="@style/Filter_Image_Style" />
+
+            <ImageView
+                android:id="@+id/iv_normal4"
+                style="@style/Filter_Image_Style" />
+
+            <ImageView
+                android:id="@+id/iv_normal5"
+                style="@style/Filter_Image_Style" />
+
+            <ImageView
+                android:id="@+id/iv_normal6"
+                style="@style/Filter_Image_Style" />
+
+            <ImageView
+                android:id="@+id/iv_normal7"
+                style="@style/Filter_Image_Style" />
+
+            <ImageView
+                android:id="@+id/iv_normal8"
+                style="@style/Filter_Image_Style" />
+
+            <ImageView
+                android:id="@+id/iv_normal9"
+                style="@style/Filter_Image_Style" />
+
+            <ImageView
+                android:id="@+id/iv_normal10"
+                style="@style/Filter_Image_Style" />
+
+            <ImageView
+                android:id="@+id/iv_normal11"
+                style="@style/Filter_Image_Style" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <include layout="@layout/divide_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/filter_cancel"
+            style="@style/wrap_wrap"
+            android:padding="10dp"
+            android:src="@drawable/close" />
+
+        <TextView
+            style="@style/wrap_wrap"
+            android:layout_centerInParent="true"
+            tools:text="滤镜" />
+
+        <ImageView
+            android:id="@+id/filter_confirm"
+            style="@style/wrap_wrap"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:src="@drawable/confirm" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,91 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="QMUI.Compat.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="wrap_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="match_match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Btn_Style">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/qmui_config_color_75_pure_black</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="Factory_Item_Style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+    <style name="Adjust_Item_Style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">7dp</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+    <style name="Filter_Image_Style">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="Top_Layout_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="Adjust_Image_Style">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+    </style>
+
+    <style name="Adjust_Linear_Style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Asjust_Text_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="Adjust_RadioButton_Style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/adjust_text_color</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            style="@style/wrap_wrap"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/close" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/wrap_wrap"
+            android:layout_centerInParent="true"
+            android:text="转换结果"
+            android:textColor="@color/textColor"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bgColor" />
+
+    <uk.co.senab.photoview.PhotoView
+        android:id="@+id/photo_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/wrap_wrap"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/bgColor"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:visibility="invisible"
+        tools:text="耗时：4000ms" />
+
+    <TextView
+        android:id="@+id/et_result"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:text="123123"
+        android:textSize="17sp" />
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/filter_cancel"
+        style="@style/wrap_wrap"
+        android:padding="10dp"
+        android:src="@drawable/close"/>
+
+    <TextView
+        android:id="@+id/filter_center"
+        style="@style/wrap_wrap"
+        android:layout_centerInParent="true"
+        tools:text="滤镜"/>
+    <ImageView
+        android:id="@+id/filter_confirm"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/confirm"
+        android:padding="10dp"
+        style="@style/wrap_wrap"/>
+</RelativeLayout>
